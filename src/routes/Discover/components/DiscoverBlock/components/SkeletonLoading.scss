@@ -1,0 +1,29 @@
+$skeleton-image-size: 150px;
+
+.skeleton-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: $skeleton-image-size;
+  
+  .skeleton-loading-item {
+    width: $skeleton-image-size;
+    height: $skeleton-image-size;
+    background-color: #f0f0f0; // Adjust background color
+    border-radius: 10px; // Make it circular
+    animation: pulse 1.5s infinite ease-in-out;
+
+    @keyframes pulse {
+      0% {
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 0.8;
+      }
+      100% {
+        opacity: 0.6;
+      }
+    }
+  }
+}
